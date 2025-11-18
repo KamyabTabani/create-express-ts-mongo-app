@@ -1,10 +1,10 @@
 {
-  "name": "create-express-mongo-app",
+  "name": "create-express-ts-mongo-app",
   "version": "1.0.0",
   "description": "CLI to scaffold Express MongoDB TypeScript API with authentication",
   "main": "bin/cli.js",
   "bin": {
-    "create-express-mongo-app": "./bin/cli.js"
+    "create-express-ts-mongo-app": "./bin/cli.js"
   },
   "scripts": {
     "test": "echo \"Run npm link to test locally\" && exit 0"
@@ -31,12 +31,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kamyabtabani/create-express-mongo-app.git"
+    "url": "git+https://github.com/kamyabtabani/create-express-ts-mongo-app.git"
   },
   "bugs": {
-    "url": "https://github.com/kamyabtabani/create-express-mongo-app/issues"
+    "url": "https://github.com/kamyabtabani/create-express-ts-mongo-app/issues"
   },
-  "homepage": "https://github.com/kamyabtabani/create-express-mongo-app#readme",
+  "homepage": "https://github.com/kamyabtabani/create-express-ts-mongo-app#readme",
   "engines": {
     "node": ">=14.0.0"
   },

@@ -4,25 +4,25 @@
 ### Using npx (Recommended)
 
 ```bash
-npx create-create-express-mongo-app my-project
+npx create-create-express-ts-mongo-app my-project
 ```
 
 ### Using npm
 
 ```bash
-npm init create-express-mongo-app my-project
+npm init create-express-ts-mongo-app my-project
 ```
 
 ### Using Yarn
 
 ```bash
-yarn create create-express-mongo-app my-project
+yarn create create-express-ts-mongo-app my-project
 ```
 
 ### Using pnpm
 
 ```bash
-pnpm create create-express-mongo-app my-project
+pnpm create create-express-ts-mongo-app my-project
 ```
 
 ---
@@ -32,7 +32,7 @@ pnpm create create-express-mongo-app my-project
 ### Interactive Mode
 
 ```bash
-npx create-create-express-mongo-app
+npx create-create-express-ts-mongo-app
 ```
 
 You'll be prompted for:
@@ -46,7 +46,7 @@ You'll be prompted for:
 ### Quick Start (Skip Prompts)
 
 ```bash
-npx create-create-express-mongo-app my-app --yes
+npx create-create-express-ts-mongo-app my-app --yes
 ```
 
 ### Command Options
@@ -64,16 +64,16 @@ npx create-create-express-mongo-app my-app --yes
 
 ```bash
 # Create project with custom name
-npx create-create-express-mongo-app my-awesome-api
+npx create-create-express-ts-mongo-app my-awesome-api
 
 # Skip all prompts
-npx create-create-express-mongo-app my-api --yes
+npx create-create-express-ts-mongo-app my-api --yes
 
 # Create without git initialization
-npx create-create-express-mongo-app my-api --no-git
+npx create-create-express-ts-mongo-app my-api --no-git
 
 # Create without installing dependencies
-npx create-create-express-mongo-app my-api --no-install
+npx create-create-express-ts-mongo-app my-api --no-install
 ```
 
 ---
