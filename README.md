@@ -4,7 +4,7 @@
 ### Using npx (Recommended)
 
 ```bash
-npx create-create-express-ts-mongo-app my-project
+npx create-express-ts-mongo-app my-project
 ```
 
 ### Using npm
