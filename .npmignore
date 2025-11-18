@@ -1,0 +1,49 @@
+# Source files (we only publish the final package)
+.git/
+.github/
+.vscode/
+.idea/
+
+# Development files
+*.test.js
+*.spec.js
+.eslintrc*
+.prettierrc*
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test
+coverage/
+.nyc_output/
+test/
+tests/
+__tests__/
+
+# Build artifacts not needed
+.cache/
+
+# Documentation (keep only main README)
+docs/
+
+# CI/CD
+.travis.yml
+.gitlab-ci.yml
+.circleci/
+azure-pipelines.yml
+
+# Temporary
+tmp/
+temp/

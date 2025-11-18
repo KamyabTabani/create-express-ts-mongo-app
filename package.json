@@ -1,0 +1,58 @@
+{
+  "name": "create-express-mongo-app",
+  "version": "1.0.0",
+  "description": "CLI to scaffold Express MongoDB TypeScript API with authentication",
+  "main": "bin/cli.js",
+  "bin": {
+    "create-express-mongo-app": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Run npm link to test locally\" && exit 0"
+  },
+  "keywords": [
+    "create",
+    "express",
+    "mongodb",
+    "typescript",
+    "api",
+    "scaffold",
+    "boilerplate",
+    "cli",
+    "generator",
+    "jwt",
+    "authentication",
+    "rest-api",
+    "nodejs",
+    "backend",
+    "starter",
+    "template"
+  ],
+  "author": "Kamyab Tabani <k.tabani82@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamyabtabani/create-express-mongo-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kamyabtabani/create-express-mongo-app/issues"
+  },
+  "homepage": "https://github.com/kamyabtabani/create-express-mongo-app#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "inquirer": "^8.2.5",
+    "ora": "^5.4.1",
+    "fs-extra": "^11.1.1",
+    "validate-npm-package-name": "^5.0.0"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "templates",
+    "README.md",
+    "LICENSE"
+  ]
+}
