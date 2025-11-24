@@ -3,6 +3,7 @@ import { ApiError } from '../utils/ApiError';
 import { CONSTANTS } from '../config/constants';
 import { AuthResponse, LoginCredentials } from '../types';
 import logger from '../utils/logger';
+import jwt from "jsonwebtoken";
 
 export class AuthService {
     async register(name: string, email: string, password: string, age?: number): Promise<AuthResponse> {
@@ -64,7 +65,6 @@ export class AuthService {
 
     async verifyToken(token: string): Promise<any> {
         try {
-            const jwt = require('jsonwebtoken');
             return jwt.verify(token, process.env.JWT_SECRET || 'secret');
         } catch (error) {
             throw new ApiError(CONSTANTS.HTTP_STATUS.UNAUTHORIZED, CONSTANTS.MESSAGES.INVALID_TOKEN);

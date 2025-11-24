@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import logger from './utils/logger';
 import fs from 'fs';
 import path from 'path';
+import mongoose from "mongoose";
 
 const envFile = process.env.NODE_ENV === 'production'
     ? '.env.production'
@@ -32,16 +33,27 @@ const server = app.listen(PORT, () => {
 
 const gracefulShutdown = (signal: string) => {
     logger.info(`\n${signal} signal received: closing HTTP server`);
+
     server.close(() => {
-        logger.info('HTTP server closed');
-        process.exit(0);
+        mongoose.connection.close()
+            .then(() => {
+                logger.info('📦 MongoDB connection closed');
+                logger.info('✅ HTTP server closed');
+                logger.info('👋 Graceful shutdown completed');
+                process.exit(0);
+            })
+            .catch((error) => {
+                logger.error('❌ Error during shutdown:', error);
+                process.exit(1);
+            });
     });
 
     setTimeout(() => {
-        logger.error('Forcing shutdown');
+        logger.error('⚠️  Could not close connections in time, forcing shutdown');
         process.exit(1);
     }, 10000);
 };
+
 
 process.on('SIGTERM', () => gracefulShutdown('SIGTERM'));
 process.on('SIGINT', () => gracefulShutdown('SIGINT'));

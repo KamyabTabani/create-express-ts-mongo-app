@@ -28,10 +28,4 @@ mongoose.connection.on('disconnected', () => {
     logger.warn('Mongoose disconnected');
 });
 
-process.on('SIGINT', async () => {
-    await mongoose.connection.close();
-    logger.info('Mongoose connection closed due to app termination');
-    process.exit(0);
-});
-
 export default connectDB;

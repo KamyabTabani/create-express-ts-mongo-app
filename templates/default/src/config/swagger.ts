@@ -1,5 +1,5 @@
 import swaggerJsdoc from 'swagger-jsdoc';
-import { SwaggerDefinition } from 'swagger-jsdoc';
+import {SwaggerDefinition} from 'swagger-jsdoc';
 
 const swaggerDefinition: SwaggerDefinition = {
     openapi: '3.0.0',
@@ -40,7 +40,10 @@ const swaggerDefinition: SwaggerDefinition = {
 
 const options = {
     swaggerDefinition,
-    apis: ['./src/routes/*.ts', './src/models/*.ts'],
+    apis: [
+        './src/routes/*.ts',
+        // './src/models/*.ts'
+    ],
 };
 
 export const swaggerSpec = swaggerJsdoc(options);
