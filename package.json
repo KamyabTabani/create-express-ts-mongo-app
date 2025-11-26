@@ -1,7 +1,7 @@
 {
   "name": "create-express-ts-mongo-app",
-  "version": "1.0.1",
-  "description": "CLI to scaffold Express MongoDB TypeScript API with authentication",
+  "version": "1.0.2",
+  "description": "Beautiful CLI to scaffold production-ready Express + MongoDB + TypeScript API",
   "main": "bin/cli.js",
   "bin": {
     "create-express-ts-mongo-app": "./bin/cli.js"
@@ -25,7 +25,9 @@
     "nodejs",
     "backend",
     "starter",
-    "template"
+    "template",
+    "docker",
+    "production-ready"
   ],
   "author": "Kamyab Tabani <k.tabani82@gmail.com>",
   "license": "MIT",

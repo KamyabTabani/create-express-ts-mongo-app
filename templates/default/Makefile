@@ -1,3 +1,5 @@
+#SHELL := C:/Program Files/Git/usr/bin/bash.exe #IF YOU ARE USING POWERSHELL OR CMD IN WINDOWS , UNCOMMENT THIS LINE
+
 .PHONY: help setup setup-dev setup-prod install dev test build up down restart logs clean
 
 # ============================================
