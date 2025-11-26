@@ -1,7 +1,6 @@
+<h1 align="center">Beautiful CLI to scaffold production-ready Express + MongoDB + TypeScript API</h1>
 
 <div align="center">
-
-## Beautiful CLI to scaffold production-ready Express + MongoDB + TypeScript API
 
 [![npm version](https://img.shields.io/npm/v/create-express-ts-mongo-app.svg)](https://www.npmjs.com/package/create-express-ts-mongo-app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

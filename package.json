@@ -1,6 +1,6 @@
 {
   "name": "create-express-ts-mongo-app",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Beautiful CLI to scaffold production-ready Express + MongoDB + TypeScript API",
   "main": "bin/cli.js",
   "bin": {
