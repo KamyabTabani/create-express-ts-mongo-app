@@ -23,8 +23,6 @@
 - ✅ Jest testing setup
 - ✅ Makefile automation
 
----
-
 ## 🚀 Installation
 
 ### Using npx (Recommended)
@@ -38,8 +36,6 @@ npx create-express-ts-mongo-app my-project
 ```bash
 npm init express-ts-mongo-app my-project
 ```
-
----
 
 ## 📖 Usage
 
@@ -93,6 +89,6 @@ npx create-express-ts-mongo-app my-api --no-git
 
 <div align="center">
 
-### 📚 After Installation, Check The Full Documentation Provided Inside Your Project Folder ❗️
+### After Installation, Check The Full Documentation Provided Inside Your Project Folder ❗️
 
 </div>
